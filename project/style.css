@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-container {
+  color: #C7c6c6;
+  width: 37.5rem;
+  padding: 1.3rem;
+  background-color: #8c8484;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+.pass-alert {
+  color: #E2dfdf;
+  padding: 0.5rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #8e8c8c;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.3rem;
+  -webkit-border-radius: 1.3rem;
+  -moz-border-radius: 1.3rem;
+  -ms-border-radius: 1.3rem;
+  -o-border-radius: 1.3rem;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition: 0.4;
+  -webkit-transition: 0.4;
+  -moz-transition: 0.4;
+  -ms-transition: 0.4;
+  -o-transition: 0.4;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+  margin-top: 0.8rem;
+}
+.input-area input {
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  background: none;
+}
+.input-area i {
+  opacity: 0.5;
+}
+.input-area i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn-generate {
+  font-size: 1.3rem;
+  padding: 0.8rem 1.3rem;
+  margin: 0.8rem 0rem;
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  -moz-border-radius: 1.4rem;
+  -ms-border-radius: 1.4rem;
+  -o-border-radius: 1.4rem;
+  cursor: pointer;
+  background-color: #Afadad;
+  color: #E2dfdf;
+}
+.btn-generate:hover {
+  background-color: #666464;
+  color: #Dedada;
+}
+
+.active {
+  right: -330px;
+}/*# sourceMappingURL=style.css.map */

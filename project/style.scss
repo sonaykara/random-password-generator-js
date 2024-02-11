@@ -1,0 +1,142 @@
+$font-famaily-html : 'Times New Roman', Times, serif;
+$pasword-container-color : #C7c6c6;
+$password-container-background-color : #8c8484;
+$pasword-container-boxshadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+$password-alert-color : #E2dfdf;
+$password-alert-background-color:#8e8c8c;
+$pasword-alert-boxshadow : rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+$btn-generate-color : #E2dfdf;
+$btn-generate-hover--color : #Dedada;
+$btn-generate-background-color : #Afadad;
+$btn-generate-hover-background-color :  #666464;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pass-alert-position {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+@mixin flex-center-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin input {
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    background:none;
+}
+
+@mixin input-hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ html {
+    font-family:$font-famaily-html ;
+ }
+
+ .main {
+    height: 100vh;
+    @include flex-center();
+
+ }
+
+.password-container {
+    color: $pasword-container-color;
+    width: 37.5rem;
+    padding: 1.3rem;
+    background-color: $password-container-background-color;
+    box-shadow: $pasword-container-boxshadow;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+    
+.pass-alert {
+    color: $password-alert-color;
+    padding: 0.5rem;
+    @include pass-alert-position();
+    background-color: $password-alert-background-color;
+    width: 20rem;
+    @include flex-center();
+    border-radius: 1.3rem;
+    -webkit-border-radius: 1.3rem;
+    -moz-border-radius: 1.3rem;
+    -ms-border-radius: 1.3rem;
+    -o-border-radius: 1.3rem;
+    font-size: 1rem;
+    box-shadow: $pasword-alert-boxshadow;
+    transition: 0.4;
+    -webkit-transition: 0.4;
+    -moz-transition: 0.4;
+    -ms-transition: 0.4;
+    -o-transition: 0.4;
+}
+
+.input-area {
+    @include flex-center-between();
+    border: 2px solid black;
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+    -webkit-border-radius: 0.8rem;
+    -moz-border-radius: 0.8rem;
+    -ms-border-radius: 0.8rem;
+    -o-border-radius: 0.8rem;
+    margin-top: 0.8rem;
+
+    input {
+        @include input()
+    }
+
+    i {
+        opacity: 0.5;
+
+        &:hover {
+
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+}
+
+.btn-generate {
+    font-size: 1.3rem;
+    padding: 0.8rem  1.3rem;
+    margin: 0.8rem  0rem;
+    border-radius: 1.4rem;
+    -webkit-border-radius: 1.4rem;
+    -moz-border-radius: 1.4rem;
+    -ms-border-radius: 1.4rem;
+    -o-border-radius: 1.4rem;
+    cursor: pointer;
+    background-color: $btn-generate-background-color;
+    color: $btn-generate-color;
+
+    &:hover {
+        background-color: $btn-generate-hover-background-color;
+        color: $btn-generate-hover--color;
+    }
+}
+
+
+
+ .active {
+     right: -330px;
+ }
